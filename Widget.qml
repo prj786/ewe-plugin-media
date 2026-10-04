@@ -21,7 +21,7 @@ Item {
 
     readonly property string mode: (root.settings && root.settings.button) ? String(root.settings.button) : "auto"
     readonly property bool allowed: mode === "bar" || mode === "both" || (mode === "auto" && !Shell.dockPresent)
-    readonly property bool shown: allowed && (pick.player !== null || root.settings.always_show === true)
+    readonly property bool shown: allowed && (pick.player !== null || (root.settings && root.settings.always_show === true))
 
     implicitWidth: shown ? mod.implicitWidth : 0
     implicitHeight: mod.implicitHeight

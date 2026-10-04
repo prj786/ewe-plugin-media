@@ -26,7 +26,7 @@ Komble → Add-ons → Music, or `ewe-plugin set ewe.media <key> <value>`:
 
 | key | values | default | meaning |
 |---|---|---|---|
-| `button` | `auto` `bar` `dock` `both` | `auto` | where the button lives — `auto` puts it in the bar only while no dock is present; `dock` never shows it in the bar. (A dock item is static today: `bar` cannot hide it from an installed dock.) |
+| `button` | `auto` `bar` `dock` `both` | `auto` | where the button lives — `auto` puts it in the bar only while no dock is present; `dock` never shows it in the bar.; `bar` also hides the dock item; the dock item is shown only while a player exists, unless `always_show`. |
 | `always_show` | bool | `false` | keep the bar button in place when nothing is playing |
 
 ## IPC
